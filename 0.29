@@ -1,0 +1,31 @@
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: C:\Users\roso272128\AppData\Local\Continuum\miniconda3\envs\skimage-dev
+
+  added / updated specs:
+    - cython
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    cython-0.29.13             |   py37ha925a31_0         1.8 MB
+    ------------------------------------------------------------
+                                           Total:         1.8 MB
+
+The following NEW packages will be INSTALLED:
+
+  cython             pkgs/main/win-64::cython-0.29.13-py37ha925a31_0
+
+
+Proceed ([y]/n)? 
+
+Downloading and Extracting Packages
+cython-0.29.13       | 1.8 MB    |            |   0% cython-0.29.13       | 1.8 MB    |            |   1% cython-0.29.13       | 1.8 MB    | ##7        |  27% cython-0.29.13       | 1.8 MB    | #####7     |  58% cython-0.29.13       | 1.8 MB    | ########9  |  90% cython-0.29.13       | 1.8 MB    | ########## | 100% 
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
