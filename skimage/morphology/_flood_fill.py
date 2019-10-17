@@ -14,7 +14,7 @@ from ._flood_fill_cy import _flood_fill_equal, _flood_fill_tolerance
 
 
 def flood_fill(image, seed_point, new_value, *, selem=None, connectivity=None,
-               tolerance=None, inplace=False):
+               tolerance=None, in_place=False):
     """Perform flood filling on an image.
 
     Starting at a specific `seed_point`, connected points equal or within
@@ -45,7 +45,7 @@ def flood_fill(image, seed_point, new_value, *, selem=None, connectivity=None,
         value of `image` at `seed_point` to be filled.  This is fastest.
         If a tolerance is provided, adjacent points with values within plus or
         minus tolerance from the seed point are filled (inclusive).
-    inplace : bool, optional
+    in_place : bool, optional
         If True, flood filling is applied to `image` inplace.  If False, the
         flood filled result is returned without modifying the input `image`
         (default).
@@ -103,7 +103,7 @@ def flood_fill(image, seed_point, new_value, *, selem=None, connectivity=None,
     mask = flood(image, seed_point, selem=selem, connectivity=connectivity,
                  tolerance=tolerance)
 
-    if not inplace:
+    if not in_place:
         image = image.copy()
 
     image[mask] = new_value
